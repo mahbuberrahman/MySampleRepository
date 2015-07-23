@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html>
  <head>
+ <style>
+ body {
+ 	background-color: linen;
+ }
+ h1{
+ 	color: maroon;
+ 	margin-left; 
+ }
+ </style>
   <title> Initial page</title>
  </head>
 <body>
  <h1>This is my initial html page</h1>
- <h6>This is my initial html page</h6>
+ <h4 style="color:blue;margin-left:20px;">This is my initial html page</h4>
+ <h3>Thia is my first html page</h3><hr>
+ <p>This is my first html page </p>
 
- <a href="http:\\www.wsj.com">sample page</a>
+ <pre>Getting started with html class.
+ 		Fisrt html class 
+ 		I am writting.
+ </pre>
+ Upload percentage:
+ <progress value="10" max="100">
+ 	
+ </progress>
+
+ <q> Hello World </q>
+
+ <p><s>This is my world</s></p>
+
+ <em> Winter is coming </em>
+ <strong>california is a hot desert </strong>
+
+
+<img src="10478696_1068400679867087_332544682283730030_o.jpg" width="105" height="105">
+ <a href="http:\\www.wsj.com">wall street</a>
+ <a href="http:\\www.yahoo.com">yahoo</a>
+
+<p id="hello">Hello World</p>
+ <script>
+  document.getElementById("hello").innerHTMl = "Hello World";
+ </script>
+
+ <script src="sample.js" type="text/javascript"></script>
+
+ <button onclick="sampleFunction('red');" >Sample Button</button>
+ 	<p id="sampleButton">This is color changing text</p>
+
+
+ <section>
+ 	<p>This is section - 1</p>
+ </section>
+
+
+ <select>
+ 	<option value="section - 1">This is section - 1</option>
+ 	<option value="section - 2">This is section - 2</option>
+ 	<option value="section - 3">This is section - 3</option>
+ </select><br><br>
+
+<p class="paragraph_ident">This is the ui class and i am listening to this class and sometimes I also practice a lot.</p>
+
+
+<audio controls>
+	<source src="Mirrors (Feat. Bruno Mars).mp3" type="audio/mpeg">
+     This is not for older broeser.
+</audio> <br>
+
+<span class="xyz" style> This is a span </span>
+<p>This is a <span style = "background-color: #8abb55">inline element </span>without background.</p>
+
+<p style = "background-color: #8abb55">This is a <span >inline element </span>without background.</p>
+
+<form action="sample.html" autocomplete="on">
+
+ 	<fieldset>
+		<legend>Personal Details </legend>
+		<div name="First Name">
+
+	First Name: <input type="text" id="f.name" name="firstname" Placeholder="First Name" maxlength="20">
+	</div>
+
+	<div name="Last Name">
+	Last Name: <input type="text" id="l.name" name="lastname" Placeholder="Last Name">
+	</div>
+
+	Numbers only: <input type="number" name="nmbsonly" min="1" max="10">
+
+	Quantity: <input type="number" name="points" min="0" max="100" step="5" value="20">
+
+	Date: <input type="date" name="today_date">
+
+	Time: <input type="time" name=""time>
+
+	Email: <input type="email" name="email">
+
+	Password: <input type="password" name="Paul">
+
+	</fieldset>
+
+<br>
+
+
+<fieldset>
+	<legend>Choose Color </legend>
+
+<input type="checkbox" name="colorchoser" value="Blue"> Blue
+<input type="checkbox" name="colorchooser" value="Green"> Green
+<br>
+<input type="radio" name="colorchoser" value="Blue" checked> Blue
+<input type="radio" name="colorchooser" value="Green"> Green 
+</fieldset>
+
+<textarea name="sample_textarea" rows="2" cols="50">This is the textarea where wewrite multiple statments
+</textarea>
+
+<input type="submit" value="submit">
+
+<button type="button" onclick="alert('Thanks for submission')";>click for console
+	
+</button>
+
+<input list="names" name="namelist">
+<Datalist id="names">
+<option value="John">
+<option value="Tom">
+<option value="Jerry">
+
+</datalist>
+<input type="submit">
+
+
+</form>
+
+<canvas id="myCanvas" width="300" height="300" style="border:2px solid #DF013A;">This is my canvas</canvas>
+
+<script type="text/javascript">
+var a = document.getElementById("myCanvas");
+var ctx= a.getContext("2d");
+ctx.font= "30px Arial";
+ctx.fillText("myCanvas", 10, 50);
+</script>
+
+<svg width="300" height="200">
+	<polygon points = "100,10 40,198 198,78 10,78 160,198"
+	style="fill:yellow;stroke:purple; stroke-width:5 
+	fill-rule:evenodd;" />
+	</polygon>
+</svg>
+
+<video width="400" height="300" style="1px solid #070719;" autoplay>
+<source src="Users/mahbuberrahman/Downloads/2015-07-06 19.36 User Interface Training 07_06_2015.wmv" type="video/wmv">
+Your browser does not support the video tag.
+</video>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O-RgquKVTPE" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1437555573420!6m8!1m7!1sErkD-Uyo9xUVLHp0lJ66sQ!2m2!1d37.868729!2d-122.25916!3f8!4f0!5f0.7820865974627469" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.6080169971883!2d-122.05779439999995!3d37.39910130000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7142d5ba3a3%3A0x6af825255768f778!2sGoogle+Quad+Campus!5e0!3m2!1sen!2sus!4v1437605376294" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="http://www.sjsu.edu" width="100%" height="500"></iframe>
+
+<p>&euro;</p>
+<p>&sum;</p>
+<p>&copy;</p>
+
+
+<div class=""> </div>
+
+<table id="1" style="width:100%">
+	<tr>
+		<th rowspan="2">First Name</th>
+		<th colspan="2">Last Name</th>
+	</tr>
+	<tr>
+		<td>Bharadwaj</td>
+		<td>UI class</td>
+	</tr>
+	
+</table>
+
+<ul>
+	<li>Angularjs</li>
+	<li>HTML5</li>
+</ul>
+
+<ol type="I">
+	<li>Angularjs</li>
+	<li>HTML5</li>
+</ol>
+
+<dl>
+	<dt>Angularjs</dt>
+	<dd>Dependaent on javascript undersstanding</dd>
+	<!--<dd>dependent on javascript understanding</dd>--> 
+</dl>
+
+
+
+
+
 </body>
- </head>
 </html>
+
